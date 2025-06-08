@@ -1,4 +1,4 @@
-package com.project.quizapp.ExceptionHandler;
+package com.project.quizapp.exceptionHandler;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
