@@ -27,10 +27,6 @@ public class QuestionService {
         return "All questions loaded successfully";
     }
 
-//     public List<Question> getAllQuestions() {
-//         return questionDao.findAll();
-//     }
-
     public List<Question> getAllQuestions() {
         List<Question> questions = questionDao.findAll();
         if (questions == null || questions.isEmpty()) {
@@ -58,9 +54,6 @@ public class QuestionService {
         }
 
         Question saved = questionDao.save(question);
-        if (saved == null) {
-            throw new RuntimeException("Failed to add question");
-        }
         return "Question added successfully";
     }
 
